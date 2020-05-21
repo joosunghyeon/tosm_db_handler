@@ -1,8 +1,11 @@
 # TOSM-based database handler
-OWL-based TOSM database handler
+OWL-based database handler using Owlready2
     
     # How to test
-    roslaunch tosm_db_handler test.launch
+    roslaunch tosm_db_handler sample_test.launch
+
+    # Update tosm-based database manually
+    roslaunch tosm_db_handler db_update.launch
 
 # To use python3 in ROS
 We use an Owlready2 python3 package to handle the ontology-based database. In order to use python3 in ROS, you should install packages as follow.
@@ -11,10 +14,16 @@ We use an Owlready2 python3 package to handle the ontology-based database. In or
     sudo pip3 install rospkg catkin_pkg
 
 # Requirements
-Python 3.5, Owlready2 0.23, setuptools 41.0.0
+Python 3.5, Owlready2 0.23, setuptools 41.0.0, rdflib 4.2.2
 
 # Version history
-Version 0.0.1
+Version 0.0.1 (May 15, 2020)
 - Added database handling APIs (e.g., query individuals, add individuals, update individuals, and save the owl file).
 - Added a test python script to explain how to use APIs.
-- Todo: Add relationship related APIs such as handling object properties functions.
+- Todo: Add relationship-related APIs such as handling object property functions.
+
+Version 0.0.2 (May 22, 2020)
+- Added a class "TOSMDatabaseSPARQL" which is used for a query with SPARQL.
+- Added a test script for testing SPARQL in sample_test.py (isConnectedTo and isInsideOf; only for places)
+- Added a database update node to update DB manually in need.
+- Todo: Make various SPARQL queires functions.

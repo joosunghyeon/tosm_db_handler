@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 from tosm_database_handler import TOSMDatabaseHandler
+from tosm_database_sparql import TOSMDatabaseSPARQL
 import rospy
 import rospkg
+import re
 
 if __name__ == "__main__":
     rospy.init_node("test")
+
+    print()
+    print("*****TOSM Database Handler Test")
+    print()
 
     test = TOSMDatabaseHandler(rospy.get_param("owl_file_name"), rospy.get_param("owl_file_path"))
 
@@ -51,4 +57,46 @@ if __name__ == "__main__":
 
     # save as
     test.save_as(rospy.get_param("save_as_owl_file_name"))
-    
+
+    print()
+    print("*****TOSM Database SPARQL Test")
+    print()
+
+    test2 = TOSMDatabaseSPARQL(rospy.get_param("owl_file_name"), rospy.get_param("owl_file_path"))
+
+    # query s and o related with isConnectedTo (using SPQRQL)
+    resultsList = test2.query_places("isConnectedTo")
+
+    print()
+    print("******** Query places using isConnectedTo property")
+    print()
+
+    for item in resultsList:
+        s = str(item['s'].toPython())
+        s = re.sub(r'.*#',"",s)
+
+        o = str(item['o'].toPython())
+        o = re.sub(r'.*#', "", o)
+        print(s + "  isConnectedTo  " + o)
+        print(test.query_individual(s).name, "boundary: ", test.query_individual(s).boundary[0])
+        print(test.query_individual(o).name, "boundary: ", test.query_individual(o).boundary[0])
+        print()
+
+    # query s and o related with isInsideOf (using SPQRQL)
+    resultsList = test2.query_places("isInsideOf")
+
+    print()
+    print("******** Query places using isInsideOf property")
+    print()
+
+    for item in resultsList:
+        s = str(item['s'].toPython())
+        s = re.sub(r'.*#',"",s)
+
+        o = str(item['o'].toPython())
+        o = re.sub(r'.*#', "", o)
+        print(s + "  isInsideOf  " + o)
+        print(test.query_individual(s).name, "boundary: ", test.query_individual(s).boundary[0])
+        print(test.query_individual(o).name, "boundary: ", test.query_individual(o).boundary[0])
+        print()
+

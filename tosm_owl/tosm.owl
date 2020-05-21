@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns="http://www.semanticweb.org/ses/tosm#"
          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns="http://www.semanticweb.org/ses/tosm#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xml:base="http://www.semanticweb.org/ses/tosm">
 
 <owl:Ontology rdf:about="http://www.semanticweb.org/ses/tosm">
@@ -418,17 +418,20 @@ This property means the place is a leaf place that doesn't have any child place 
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </Base>
 
 <Floor rdf:about="#floor1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLeafPlace>
 </Floor>
 
 <Building rdf:about="#building1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLeafPlace>
 </Building>
 
@@ -436,6 +439,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </Cafe>
 
@@ -446,6 +450,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
   <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Corridor rdf:about="#corridor1">
@@ -459,6 +464,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isConnectedTo rdf:resource="#escalator2"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </Corridor>
 
@@ -469,6 +475,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isConnectedTo rdf:resource="#kdjHall1"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </Corridor>
 
@@ -476,6 +483,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </Doorway>
 
@@ -483,6 +491,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </Doorway>
 
@@ -490,6 +499,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </Doorway>
 
@@ -497,6 +507,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </Escalator>
 
@@ -504,6 +515,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </Escalator>
 
@@ -514,6 +526,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isConnectedTo rdf:resource="#escalator3"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </Corridor>
 
@@ -521,6 +534,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </InformationCenter>
 
@@ -528,6 +542,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </KDJHall>
 
@@ -535,6 +550,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </Doorway>
 
@@ -542,6 +558,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
+  <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</boundary>
   <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
 </Escalator>
 
@@ -551,6 +568,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column11">
@@ -559,6 +577,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column12">
@@ -567,6 +586,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column13">
@@ -575,6 +595,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column14">
@@ -583,6 +604,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column15">
@@ -591,6 +613,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column16">
@@ -599,6 +622,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column17">
@@ -607,6 +631,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column18">
@@ -615,6 +640,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column19">
@@ -623,6 +649,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column2">
@@ -631,6 +658,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column20">
@@ -639,6 +667,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column3">
@@ -647,6 +676,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column4">
@@ -655,6 +685,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column5">
@@ -663,6 +694,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column6">
@@ -671,6 +703,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column7">
@@ -679,6 +712,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column8">
@@ -687,6 +721,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <Column rdf:about="#column9">
@@ -695,6 +730,7 @@ This property means the place is a leaf place that doesn't have any child place 
   <isInsideOf rdf:resource="#floor1"/>
   <isInsideOf rdf:resource="#building1"/>
   <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
+  <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0, 0, 0, 0, 1]</pose>
 </Column>
 
 <ElevatorDoor rdf:about="#elevatorDoor1">

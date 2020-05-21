@@ -7,7 +7,7 @@ class TOSMDatabaseHandler:
         self.owl_file_name = owl_file_name
         self.owl_file_path = owl_file_path
         
-        # Load an OWL file and synchronize hermit reasoner
+        # Load an OWL file and synchronize with a hermit reasoner
         onto_path.append(self.owl_file_path)
         self.onto = get_ontology("file://" + self.owl_file_path + self.owl_file_name).load()
         with self.onto:
@@ -34,7 +34,7 @@ class TOSMDatabaseHandler:
     # input: class_name (string)
     #        ex) "Column"
     # output: individual list
-    #         ex) [tosm.column1, tosm.cloumn2] or []
+    #         ex) [tosm.column1, tosm.column2] or []
     def query_individuals_of_class(self, class_name):
         # search class to query individuals
         if self.onto.search(iri=self.onto.base_iri + class_name):
@@ -80,8 +80,8 @@ class TOSMDatabaseHandler:
 
     # input: class_name (string)
     #        id (string)
-    #        data (Dictionary)
-    #        ex) data = {
+    #        individual_info (Dictionary)
+    #        ex) individual_info = {
     #               "pose" : "[2.0, 2.0, 3.5, 0, 0, 0, 1]",
     #               "velocity" : "[10, 20, 30, 0, 0, 0]",
     #            }
@@ -112,13 +112,14 @@ class TOSMDatabaseHandler:
 
     # input: individual_name (string)
     #         ex) "column8"
+    # output: boolean
     def delete_individual(self, individual_name):   
         if self.query_individual(individual_name):
             destroy_entity(self.query_individual(individual_name))
+            return True
         else:
             print("[Error] occurs in delete_individual. There is no individual " + individual_name + ".")
-        
-        return
+            return False
 
     def save(self):
         self.onto.save()
