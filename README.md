@@ -18,7 +18,7 @@ Python 3.5, Owlready2 0.23, setuptools 41.0.0, rdflib 4.2.2, cython
 
 If you get a warning "owlready2_optimized is not available" when importing owlready2, you should install cython to improve optimization and then reinstall the owlready2 sequentially.
 
-    pip3 install cython\
+    pip3 install cython
     pip3 install --force-reinstall --no-cache-dir owlready2
 
 # Version history
