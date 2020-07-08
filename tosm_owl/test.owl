@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/ses/tosm#"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xml:base="http://www.semanticweb.org/ses/tosm"
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+         xml:base="http://www.semanticweb.org/ses/tosm"
+         xmlns="http://www.semanticweb.org/ses/tosm#">
 
 <owl:Ontology rdf:about="http://www.semanticweb.org/ses/tosm">
   <owl:versionIRI rdf:resource="http://www.semanticweb.org/ses/tosm/0.1.0"/>
@@ -777,60 +777,6 @@ This property means the place is a leaf place that doesn't have any child place 
   <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[10, 20, 30, 0, 0, 0]</velocity>
 </Column>
 
-<owl:AllDisjointClasses>
-  <owl:members rdf:parseType="Collection">
-    <rdf:Description rdf:about="#AutomaticDoor"/>
-    <rdf:Description rdf:about="#ElevatorDoor"/>
-    <rdf:Description rdf:about="#HingedDoor"/>
-  </owl:members>
-</owl:AllDisjointClasses>
-
-<owl:AllDisjointClasses>
-  <owl:members rdf:parseType="Collection">
-    <rdf:Description rdf:about="#Building"/>
-    <rdf:Description rdf:about="#Road"/>
-    <rdf:Description rdf:about="#Sidewalk"/>
-  </owl:members>
-</owl:AllDisjointClasses>
-
-<owl:AllDisjointClasses>
-  <owl:members rdf:parseType="Collection">
-    <rdf:Description rdf:about="#Cafe"/>
-    <rdf:Description rdf:about="#Corridor"/>
-    <rdf:Description rdf:about="#Doorway"/>
-    <rdf:Description rdf:about="#Elevator"/>
-    <rdf:Description rdf:about="#Floor"/>
-    <rdf:Description rdf:about="#Room"/>
-    <rdf:Description rdf:about="#Staircase"/>
-  </owl:members>
-</owl:AllDisjointClasses>
-
-<owl:AllDisjointClasses>
-  <owl:members rdf:parseType="Collection">
-    <rdf:Description rdf:about="#Device"/>
-    <rdf:Description rdf:about="#Door"/>
-    <rdf:Description rdf:about="#Furniture"/>
-    <rdf:Description rdf:about="#Person"/>
-    <rdf:Description rdf:about="#Sign"/>
-  </owl:members>
-</owl:AllDisjointClasses>
-
-<owl:AllDisjointClasses>
-  <owl:members rdf:parseType="Collection">
-    <rdf:Description rdf:about="#Driver"/>
-    <rdf:Description rdf:about="#Occupant"/>
-    <rdf:Description rdf:about="#Pedestrian"/>
-  </owl:members>
-</owl:AllDisjointClasses>
-
-<owl:AllDisjointClasses>
-  <owl:members rdf:parseType="Collection">
-    <rdf:Description rdf:about="#Object"/>
-    <rdf:Description rdf:about="#Place"/>
-    <rdf:Description rdf:about="#Robot"/>
-  </owl:members>
-</owl:AllDisjointClasses>
-
 <owl:AllDifferent>
   <owl:distinctMembers rdf:parseType="Collection">
     <rdf:Description rdf:about="#base1"/>
@@ -872,6 +818,60 @@ This property means the place is a leaf place that doesn't have any child place 
     <rdf:Description rdf:about="#kdjHall1"/>
   </owl:distinctMembers>
 </owl:AllDifferent>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#Object"/>
+    <rdf:Description rdf:about="#Place"/>
+    <rdf:Description rdf:about="#Robot"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#Driver"/>
+    <rdf:Description rdf:about="#Occupant"/>
+    <rdf:Description rdf:about="#Pedestrian"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#Device"/>
+    <rdf:Description rdf:about="#Door"/>
+    <rdf:Description rdf:about="#Furniture"/>
+    <rdf:Description rdf:about="#Person"/>
+    <rdf:Description rdf:about="#Sign"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#Cafe"/>
+    <rdf:Description rdf:about="#Corridor"/>
+    <rdf:Description rdf:about="#Doorway"/>
+    <rdf:Description rdf:about="#Elevator"/>
+    <rdf:Description rdf:about="#Floor"/>
+    <rdf:Description rdf:about="#Room"/>
+    <rdf:Description rdf:about="#Staircase"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#Building"/>
+    <rdf:Description rdf:about="#Road"/>
+    <rdf:Description rdf:about="#Sidewalk"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#AutomaticDoor"/>
+    <rdf:Description rdf:about="#ElevatorDoor"/>
+    <rdf:Description rdf:about="#HingedDoor"/>
+  </owl:members>
+</owl:AllDisjointClasses>
 
 
 </rdf:RDF>

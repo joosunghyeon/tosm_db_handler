@@ -65,7 +65,7 @@ if __name__ == "__main__":
     test2 = TOSMDatabaseSPARQL(rospy.get_param("owl_file_name"), rospy.get_param("owl_file_path"))
 
     # query s and o related with isConnectedTo (using SPQRQL)
-    resultsList = test2.query_places("isConnectedTo")
+    resultsList = test2.query_connected_places()
 
     print()
     print("******** Query places using isConnectedTo property")
@@ -81,22 +81,3 @@ if __name__ == "__main__":
         print(test.query_individual(s).name, "boundary: ", test.query_individual(s).boundary[0])
         print(test.query_individual(o).name, "boundary: ", test.query_individual(o).boundary[0])
         print()
-
-    # query s and o related with isInsideOf (using SPQRQL)
-    resultsList = test2.query_places("isInsideOf")
-
-    print()
-    print("******** Query places using isInsideOf property")
-    print()
-
-    for item in resultsList:
-        s = str(item['s'].toPython())
-        s = re.sub(r'.*#',"",s)
-
-        o = str(item['o'].toPython())
-        o = re.sub(r'.*#', "", o)
-        print(s + "  isInsideOf  " + o)
-        print(test.query_individual(s).name, "boundary: ", test.query_individual(s).boundary[0])
-        print(test.query_individual(o).name, "boundary: ", test.query_individual(o).boundary[0])
-        print()
-

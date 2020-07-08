@@ -23,30 +23,41 @@ class TOSMDatabaseSPARQL:
         print("* number of data properties: ", len(list(self.onto.data_properties())))
         print()
 
-    # input: obj_prop (string)
-    #        ex) "isConnectedTo"
     # output: query results
-    def query_places(self, obj_prop):
+    def query_connected_places(self):
         query = []
         query.append("PREFIX tosm: <http://www.semanticweb.org/ses/tosm#> ")
-        query.append("SELECT ?o ?s ")
-        query.append("WHERE { ?o  tosm:")
-        query.append(obj_prop)
-        query.append("  ?s . ")
-        # to find only places
-        query.append(""" ?o  tosm:isLeafPlace  "true" . }""")
+        query.append("SELECT ?s ?o ")
+        query.append("WHERE { ?s  tosm:isConnectedTo ?o .")
+        query.append("""?s  tosm:isLeafPlace  "true" .""")
+        query.append("""?o  tosm:isLeafPlace  "true" . }""")
         query = ''.join(query)
         
         # query = "PREFIX tosm: <http://www.semanticweb.org/ses/tosm#> SELECT ?o ?s WHERE { ?s  tosm:isConnectedTo ?o }"
 
         # query = """
         # PREFIX tosm: <http://www.semanticweb.org/ses/tosm#>
-        # SELECT ?o ?s
+        # SELECT ?s ?o
         # WHERE {
-        #         ?o  tosm:isConnectedTo  ?s .
+        #         ?s  tosm:isConnectedTo  ?o .
+        #         ?s  tosm:isLeafPlace  "true" .
         #         ?o  tosm:isLeafPlace  "true" .
         #       }
         # """
+
+        resultsList = self.graph.query(query)
+
+        return resultsList
+
+    # output: query results
+    def qeury_door_insideOf_doorway(self):
+        query = []
+        query.append("PREFIX tosm: <http://www.semanticweb.org/ses/tosm#> ")
+        query.append("SELECT ?s ?o ")
+        query.append("WHERE { ?s  tosm:isInsideOf  ?o.")
+        # to find only places
+        query.append(""" ?o rdf:type tosm:Doorway. }""")
+        query = ''.join(query)
 
         resultsList = self.graph.query(query)
 

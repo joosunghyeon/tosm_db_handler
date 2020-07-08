@@ -7,6 +7,9 @@ OWL-based database handler using Owlready2
     # Update tosm-based database manually
     roslaunch tosm_db_handler db_update.launch
 
+    # Database query for ROSPLAN
+    roslaunch tosm_db_handler pohang.launch
+
 # To use python3 in ROS
 We use an Owlready2 python3 package to handle the ontology-based database. In order to use python3 in ROS, you should install packages as follow.
 
@@ -32,3 +35,9 @@ Version 0.0.2 (May 22, 2020)
 - Added a test script for testing SPARQL in sample_test.py (isConnectedTo and isInsideOf; only for places)
 - Added a database update node to update DB manually in need.
 - Todo: Make various SPARQL queires functions.
+
+Version 0.0.3 (July 8, 2020)
+- Added TOSM-based database for Pohang (pohang.owl).
+- Added a script for rosplan, query_for_rosplan.py (You can test with pohang.launch file).
+- Added query function for finding doors which are inside of doorways.
+- Todo: Update metric information for pohang.owl (Their values are initialized.)
