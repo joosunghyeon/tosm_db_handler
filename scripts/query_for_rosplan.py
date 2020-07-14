@@ -38,9 +38,24 @@ if __name__ == "__main__":
 
     #query s and o related with isInsideOf (using SPQRQL)
     print()
+    print("******** Query places using isInsideOf property")
+    print()
+    resultsList = tosm_sq.query_insideOf_places()
+
+    for item in resultsList:
+        s = str(item['s'].toPython())
+        s = re.sub(r'.*#',"",s)
+
+        o = str(item['o'].toPython())
+        o = re.sub(r'.*#', "", o)
+        print(s + "  isInsideOf  " + o)
+        print()
+
+    #query s and o related with isInsideOf (using SPQRQL)
+    print()
     print("******** Query doors which are inside of doorways")
     print()
-    resultsList = tosm_sq.qeury_door_insideOf_doorway()
+    resultsList = tosm_sq.query_door_insideOf_doorway()
 
     for item in resultsList:
         s = str(item['s'].toPython())
