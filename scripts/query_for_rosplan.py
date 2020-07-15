@@ -19,6 +19,17 @@ if __name__ == "__main__":
     print("*****TOSM Database SPARQL for ROSPLAN")
     print()
 
+    #query leaf places (using SPQRQL)
+    print()
+    print("******** Query leaf places")
+    print()
+    resultsList = tosm_sq.query_leaf_places()
+
+    for item in resultsList:
+        s = str(item['s'].toPython())
+        s = re.sub(r'.*#',"",s)
+        print(s)
+
     #query s and o related with isConnectedTo (using SPQRQL)
     print()
     print("******** Query places using isConnectedTo property")

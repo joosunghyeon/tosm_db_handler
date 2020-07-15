@@ -48,6 +48,18 @@ class TOSMDatabaseSPARQL:
         return resultsList
 
     # output: query results
+    def query_leaf_places(self):
+        query = []
+        query.append("PREFIX tosm: <http://www.semanticweb.org/ses/tosm#> ")
+        query.append("SELECT ?s ")
+        query.append("""WHERE { ?s  tosm:isLeafPlace  "true" }""")
+        query = ''.join(query)
+
+        resultsList = self.graph.query(query)
+
+        return resultsList
+
+    # output: query results
     def query_insideOf_places(self):
         query = []
         query.append("PREFIX tosm: <http://www.semanticweb.org/ses/tosm#> ")
