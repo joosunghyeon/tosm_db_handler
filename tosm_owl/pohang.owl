@@ -3028,7 +3028,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/ses/tosm#Sidewalk"/>
         <tosm1:isConnectedTo rdf:resource="http://www.semanticweb.org/ses/tosm#sidewalk3"/>
         <tosm1:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</tosm1:ID>
-        <tosm1:boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [24, 18.46], [23.7, 2.7], [53.4, 8.7], [53.4, 3.1] ]</tosm1:boundary>
+        <tosm1:boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [24, 8.46], [23.7, 2.7], [53.4, 8.7], [53.4, 3.1] ]</tosm1:boundary>
         <tosm1:complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</tosm1:complexity>
         <tosm1:coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</tosm1:coordinateFrame>
         <tosm1:isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tosm1:isLeafPlace>
