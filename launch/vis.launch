@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <param name="owl_file_path" value="$(find tosm_db_handler)/tosm_owl/"/>
+    <param name="owl_file_name" value="pohang.owl"/>
+
+    <node pkg="tosm_db_handler" type="tosm_visualization.py" name="tosm_db_handler" output="screen"/>
+</launch>

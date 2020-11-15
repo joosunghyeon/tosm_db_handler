@@ -8,4 +8,8 @@
   
   <buildtool_depend>catkin</buildtool_depend>
 
+  <exec_depend>ses_map_msgs</exec_depend>
+  <exec_depend>jsk_recognition_msgs</exec_depend>
+  <exec_depend>jsk_rviz_plugins</exec_depend>
+
 </package>

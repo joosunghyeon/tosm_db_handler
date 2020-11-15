@@ -10,6 +10,9 @@ OWL-based database handler using Owlready2
     # Database query for ROSPLAN
     roslaunch tosm_db_handler pohang.launch
 
+    # Visualization for TOSM database
+    roslaunch tosm_db_handler vis.launch
+
 # To use python3 in ROS
 We use an Owlready2 python3 package to handle the ontology-based database. In order to use python3 in ROS, you should install packages as follow.
 
