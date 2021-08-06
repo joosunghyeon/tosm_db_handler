@@ -26,7 +26,7 @@ class TOSMDatabaseSPARQL:
     # output: query results
     def query_connected_places(self):
         query = []
-        query.append("PREFIX tosm: <http://www.semanticweb.org/ses/tosm#> ")
+        query.append("PREFIX tosm: <http://www.semanticweb.org/tosm#> ")
         query.append("SELECT ?s ?o ")
         query.append("WHERE { ?s  tosm:isConnectedTo ?o .")
         query.append("""?s  tosm:isLeafPlace  "true" .""")
@@ -34,7 +34,7 @@ class TOSMDatabaseSPARQL:
         query = ''.join(query)
 
         # query = """
-        # PREFIX tosm: <http://www.semanticweb.org/ses/tosm#>
+        # PREFIX tosm: <http://www.semanticweb.org/tosm#>
         # SELECT ?s ?o
         # WHERE {
         #         ?s  tosm:isConnectedTo  ?o .
@@ -50,7 +50,7 @@ class TOSMDatabaseSPARQL:
     # output: query results
     def query_leaf_places(self):
         query = []
-        query.append("PREFIX tosm: <http://www.semanticweb.org/ses/tosm#> ")
+        query.append("PREFIX tosm: <http://www.semanticweb.org/tosm#> ")
         query.append("SELECT ?s ")
         query.append("""WHERE { ?s  tosm:isLeafPlace  "true" }""")
         query = ''.join(query)
@@ -62,7 +62,7 @@ class TOSMDatabaseSPARQL:
     # output: query results
     def query_insideOf_places(self):
         query = []
-        query.append("PREFIX tosm: <http://www.semanticweb.org/ses/tosm#> ")
+        query.append("PREFIX tosm: <http://www.semanticweb.org/tosm#> ")
         query.append("SELECT ?s ?o ")
         query.append("WHERE { ?s  tosm:isInsideOf ?o }")
         query = ''.join(query)
@@ -74,11 +74,29 @@ class TOSMDatabaseSPARQL:
     # output: query results
     def query_door_insideOf_doorway(self):
         query = []
-        query.append("PREFIX tosm: <http://www.semanticweb.org/ses/tosm#> ")
+        query.append("PREFIX tosm: <http://www.semanticweb.org/tosm#> ")
         query.append("SELECT ?s ?o ")
         query.append("WHERE { ?s  tosm:isInsideOf  ?o.")
         # to find only instances of Doorway
-        query.append(""" ?o rdf:type tosm:Doorway. }""")
+        query.append(" ?o rdf:type tosm:Doorway. }")
+        query = ''.join(query)
+
+        resultsList = self.graph.query(query)
+
+        return resultsList
+
+    # input: individual_name of place (string)
+    #        ex) "corridor36" or "building1"
+    # output: query results
+    def query_objects_insideOf_place(self, individual_name):
+        query = []
+        query.append("PREFIX tosm: <http://www.semanticweb.org/tosm#> ")
+        query.append("SELECT ?s ")
+        query.append("WHERE { ?s  tosm:isInsideOf  tosm:")
+        query.append(individual_name)
+        query.append(". ?s rdf:type/rdfs:subClassOf* tosm:Object.}")
+        #query.append(". ?s a ?type .")
+        #query.append("?type rdfs:subClassOf* tosm:Object.}")
         query = ''.join(query)
 
         resultsList = self.graph.query(query)

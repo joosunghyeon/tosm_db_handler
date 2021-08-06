@@ -78,3 +78,17 @@ if __name__ == "__main__":
         print(tosm.query_individual(o).name, "available time: ", tosm.query_individual(o).availableTime)
         print(tosm.query_individual(s).name, "size: ", tosm.query_individual(s).size)
         print()
+
+    #query objects(s) isInsideOf specific place (using SPQRQL)
+    print()
+    print("******** Query objects which are inside of specific place")
+    print()
+    place_indv = "corridor11"
+    resultsList = tosm_sq.query_objects_insideOf_place(place_indv)
+
+    for item in resultsList:
+        s = str(item['s'].toPython())
+        s = re.sub(r'.*#',"",s)
+
+        print(s + "  isInsideOf  " + place_indv)
+        print()
