@@ -22,12 +22,15 @@ if __name__ == "__main__":
     for item in results:
         id = re.findall(r"\d+", item.name)
         data = {
-            "pose" : "[0.0, 0.0, 0.0, 0, 0, 0, 1]"
+            "pose" : "[2.0, 0.0, 0.0, 0, 0, 0, 1]"
         }
-        tosm.update_individual("Column", id[0], data)
+        tosm.update_individual("Column", id[0], data, 'corridor3')
 
     end = rospy.get_rostime().to_sec()
     print("update individuals time: ", format((end-start)*1000, ".3f"), "[ms]")
+
+    for item in results:
+        print(item.pose[0])
 
     # update individuals of Corridor
     start = rospy.get_rostime().to_sec()
@@ -41,6 +44,11 @@ if __name__ == "__main__":
 
     end = rospy.get_rostime().to_sec()
     print("update individuals time: ", format((end-start)*1000, ".3f"), "[ms]")
+    
+    tosm.sync_reasoner()
+    
+    
+    rospy.spin()
 
     # save as
     tosm.save_as(rospy.get_param("save_as_owl_file_name"))

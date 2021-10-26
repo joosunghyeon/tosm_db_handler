@@ -10,8 +10,7 @@ class TOSMDatabaseHandler:
         # Load an OWL file and synchronize with a hermit reasoner
         onto_path.append(self.owl_file_path)
         self.onto = get_ontology("file://" + self.owl_file_path + self.owl_file_name).load()
-        with self.onto:
-            sync_reasoner(infer_property_values=True)
+        self.sync_reasoner()
         
         print()
         print("[TOSM Database Handler] Ready to use the database **" + self.owl_file_name)
@@ -46,14 +45,19 @@ class TOSMDatabaseHandler:
 
     # input: class_name (string)
     #        id (string)
-    #        data (Dictionary)
+    #        data_properties (Dictionary)
     #        ex) data = {
     #               "pose" : "[1.0, 2.8, 3.2, 0, 0, 0, 1]",
     #               "velocity" : "[1, 2, 3, 0, 0, 0]",
     #               "isKeyObject" : True
     #            }
+    #        object_properties (Dictionary)
+    #        ex) data = {
+    #               "isInsideOf" : 'corridor2',
+    #               "isConnectedTo" : 'corridor3, corridor4'
+    #            }
     # output: boolean
-    def add_individual(self, class_name, id, individual_info):
+    def add_individual(self, class_name, id, data_properties, object_properties):
         # search class to make individuals
         if self.onto.search(iri=self.onto.base_iri + class_name):
             # check there is an individual that has same id
@@ -64,14 +68,32 @@ class TOSMDatabaseHandler:
                 indiv_tmp = getattr(self.onto, class_name)(class_name.lower() + id)
                 # Set symbolic model (id)
                 indiv_tmp.ID.append(int(id))
-                for key in individual_info.keys():
+                
+                # Set data properties
+                for key in data_properties.keys():
                     # If the data property is defined
                     if self.onto.search(iri=self.onto.base_iri + key):
-                        getattr(indiv_tmp, key).append(individual_info[key])
+                        getattr(indiv_tmp, key).append(data_properties[key])
                     else:
                         destroy_entity(indiv_tmp)
                         print("[Error] occurs in add_individual. There is no data property *" + key + ". Define first!!")
-                        return False                
+                        return False   
+                        
+                # Set object properties
+                for key in object_properties.keys():
+                    # If the object property is defined
+                    if self.onto.search(iri=self.onto.base_iri + key):
+                        s_op = object_properties[key].replace(' ', '').split(',')
+                        for op in s_op:
+                            res = self.query_individual(op)
+                            if res:
+                                getattr(indiv_tmp, key).append(res)
+                            else:
+                                print("[Error] occurs in add_individual. There is no instances * " + op)
+                    else:
+                        destroy_entity(indiv_tmp)
+                        print("[Error] occurs in add_individual. There is no object property *" + key + ". Define first!!")
+                        return False
         else:
             print("[Error] occurs in add_individual. There is no class " + class_name + ". Define first!!")
             return False
@@ -80,26 +102,46 @@ class TOSMDatabaseHandler:
 
     # input: class_name (string)
     #        id (string)
-    #        individual_info (Dictionary)
-    #        ex) individual_info = {
+    #        data_properties (Dictionary)
+    #        ex) data_properties = {
     #               "pose" : "[2.0, 2.0, 3.5, 0, 0, 0, 1]",
     #               "velocity" : "[10, 20, 30, 0, 0, 0]",
     #            }
+    #        object_properties (Dictionary)
+    #        ex) data = {
+    #               "isInsideOf" : 'corridor2',
+    #               "isConnectedTo" : 'corridor3, corridor4'
+    #            }
     # output: boolean
-    def update_individual(self, class_name, id, individual_info):
+    def update_individual(self, class_name, id, data_properties, object_properties=None):
         # search class to update individuals
         if self.onto.search(iri=self.onto.base_iri + class_name):
             # check there is an individual that has same id
             if self.onto.search(iri=self.onto.base_iri + class_name.lower() + id):
                 indiv = getattr(self.onto, class_name)(class_name.lower() + id)
-                for key in individual_info.keys():
+                for key in data_properties.keys():
                     # If the data property is defined
                     if self.onto.search(iri=self.onto.base_iri + key):
                         getattr(indiv, key).clear()
-                        getattr(indiv, key).append(individual_info[key])
+                        getattr(indiv, key).append(data_properties[key])
                     else:
-                        print("[Error] occurs in add_individual. There is no data property *" + key + ". Define first!!")
-                        return False
+                        print("[Error] occurs in update_individual. There is no data property *" + key + ". Define first!!")
+                        
+                # Update object properties
+                if object_properties:
+                    for key in object_properties.keys():
+                        # If the object property is defined
+                        if self.onto.search(iri=self.onto.base_iri + key):
+                            getattr(indiv, key).clear()
+                            s_op = object_properties[key].replace(' ', '').split(',')
+                            for op in s_op:
+                                res = self.query_individual(op)
+                                if res:
+                                    getattr(indiv, key).append(res)
+                                else:
+                                    print("[Error] occurs in update_individual. There is no instances * " + op)
+                        else:
+                            print("[Error] occurs in add_individual. There is no object property *" + key + ". Define first!!")
             else:
                 print("[Error] occurs in update_individual. An individual that has *same id* is not found. Use add_individual instead.")
                 return False
@@ -120,6 +162,11 @@ class TOSMDatabaseHandler:
         else:
             print("[Error] occurs in delete_individual. There is no individual " + individual_name + ".")
             return False
+        
+    def sync_reasoner(self):
+        with self.onto:
+            sync_reasoner(infer_property_values=True)
+        return
 
     def save(self):
         self.onto.save()
