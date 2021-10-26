@@ -22,9 +22,16 @@ if __name__ == "__main__":
     obj_test = Object()
     obj_test.header.frame_id = "map"
     obj_test.object_name = "hingeddoor"
-    obj_test.ID = 17
+    obj_test.ID = 314
 
     test.objects.append(obj_test)
+
+    obj_test3 = Object()
+    obj_test3.header.frame_id = "map"
+    obj_test3.object_name = "hingeddoor"
+    obj_test3.ID = 311
+
+    test.objects.append(obj_test3)
 
     obj_test2 = Object()
     obj_test2.header.frame_id = "map"

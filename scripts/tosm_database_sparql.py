@@ -102,3 +102,21 @@ class TOSMDatabaseSPARQL:
         resultsList = self.graph.query(query)
 
         return resultsList
+    
+    # input: individual_name of place (string)
+    #        ex) "floor1"
+    # output: query results
+    def query_places_insideOf_place(self, individual_name):
+        query = []
+        query.append("PREFIX tosm: <http://www.semanticweb.org/tosm#> ")
+        query.append("SELECT ?s ")
+        query.append("WHERE { ?s  tosm:isInsideOf  tosm:")
+        query.append(individual_name)
+        query.append(". ?s rdf:type/rdfs:subClassOf* tosm:Place.}")
+        #query.append(". ?s a ?type .")
+        #query.append("?type rdfs:subClassOf* tosm:Object.}")
+        query = ''.join(query)
+
+        resultsList = self.graph.query(query)
+
+        return resultsList

@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <launch>
     <param name="owl_file_path" value="$(find tosm_db_handler)/tosm_owl/"/>
-    <param name="owl_file_name" value="pohang.owl"/>
+    <param name="owl_file_name" value="semantic_map_pohang.owl"/>
 
     <node pkg="tosm_db_handler" type="tosm_visualization.py" name="tosm_db_handler" output="screen"/>
+
+    <!-- map_server -->
+    <arg name="map_file" default="$(find tosm_db_handler)/maps/1st_floor.yaml"/>
+    <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
 </launch>

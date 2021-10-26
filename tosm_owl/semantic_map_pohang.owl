@@ -1401,7 +1401,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</ID>
-        <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [17.2, 16], [17.1, 12.2], [24.1, 12.2], [24.2, 15.9] ]</boundary>
+        <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [17.2, 16.0], [17.1, 12.2], [24.1, 12.2], [24.2, 15.9] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
