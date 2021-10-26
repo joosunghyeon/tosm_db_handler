@@ -2489,7 +2489,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevatordoor1</name>
-        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[53.7, 18.5, 0.0, 0, 0, 0, 1]</pose>
+        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[53.7, 18.5, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.2, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
@@ -2509,7 +2509,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevatordoor1</name>
-        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.6, 18, 0.0, 0, 0, 0, 1]</pose>
+        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.6, 18, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.2, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
@@ -2549,7 +2549,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevatordoor3</name>
-        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[84.4, 11, 0.0, 0, 0, 0, 1]</pose>
+        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[84.4, 11, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.0, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
@@ -3259,7 +3259,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
-        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[16.9, 16.9, 0.0, 0, 0, 0, 1]</pose>
+        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[16.9, 16.9, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.5, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
