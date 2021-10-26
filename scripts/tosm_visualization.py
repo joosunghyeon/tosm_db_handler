@@ -14,6 +14,7 @@ class TOSMVisualization:
         
         rospy.Subscriber("/SESMap", SESMap, self.vis_callback)
         rospy.Subscriber("/current_floor", Place, self.place_callback)
+        rospy.Subscriber("/current_place", Place, self.leaf_place_callback)
 
         self.ses_map_object_vis_pub = rospy.Publisher('SESMap_object_vis', BoundingBoxArray, queue_size=5)
         self.ses_map_place_vis_pub = rospy.Publisher('SESMap_place_vis', PolygonArray, queue_size=5)
@@ -119,37 +120,69 @@ class TOSMVisualization:
         obj_bba.header.frame_id = 'map'
 
         for obj in msg.objects:
-            obj_bb = BoundingBox()
-            res = tosm.query_individual(obj.object_name + str(obj.ID))
-            obj_bb.header = obj.header
-            pose = res.pose[0].replace('[', '').replace(']', '').split(',')
-            size = res.size[0].replace('[', '').replace(']', '').split(',')
+            res = tosm.query_individual(obj.object_name)
+            if res:
+                obj_bb = BoundingBox()
+                
+                obj_bb.header = obj.header
+                pose = res.pose[0].replace('[', '').replace(']', '').split(',')
+                size = res.size[0].replace('[', '').replace(']', '').split(',')
 
-            obj_bb.pose.position.x = float(pose[0])
-            obj_bb.pose.position.y = float(pose[1])
-            obj_bb.pose.position.z = float(pose[2]) + float(size[2])/2.0
-            obj_bb.pose.orientation.x = float(pose[3])
-            obj_bb.pose.orientation.y = float(pose[4])
-            obj_bb.pose.orientation.z = float(pose[5])
-            obj_bb.pose.orientation.w = float(pose[6])
+                obj_bb.pose.position.x = float(pose[0])
+                obj_bb.pose.position.y = float(pose[1])
+                obj_bb.pose.position.z = float(pose[2]) + float(size[2])/2.0
+                obj_bb.pose.orientation.x = float(pose[3])
+                obj_bb.pose.orientation.y = float(pose[4])
+                obj_bb.pose.orientation.z = float(pose[5])
+                obj_bb.pose.orientation.w = float(pose[6])
 
-            # bounding box size
-            obj_bb.dimensions.x = float(size[0])
-            obj_bb.dimensions.y = float(size[1])
-            obj_bb.dimensions.z = float(size[2])
+                # bounding box size
+                obj_bb.dimensions.x = float(size[0])
+                obj_bb.dimensions.y = float(size[1])
+                obj_bb.dimensions.z = float(size[2])
 
-            # likelihood
-            obj_bb.value = 1.0
+                # likelihood
+                obj_bb.value = 1.0
 
-            # determine the color
-            obj_bb.label = len(obj.object_name)
+                # determine the color
+                obj_bb.label = len(obj.object_name)
 
-            obj_bba.boxes.append(obj_bb)
+                obj_bba.boxes.append(obj_bb)
+            else:
+                print('There are no ' + obj.object_name + '. Add the instance first.')
 
         self.detected_object_vis_pub.publish(obj_bba)
 
     def place_callback(self, msg):
         self.vis_instances_on_place(msg.place_name)
+        
+    def leaf_place_callback(self, msg):
+        # Polygon array for the current leaf place
+        places_pa = PolygonArray()
+        places_pa.header.frame_id = 'map'
+        
+        res = tosm.query_individual(msg.place_name)
+        
+        if res:   
+            ps = PolygonStamped()
+            ps.header.frame_id = 'map'
+            ps.header.stamp = rospy.Time.now()
+            
+            boundary = ast.literal_eval(res.boundary[0])
+            ps.polygon.points = [Point32(v[0],v[1],0) for v in boundary]
+            places_pa.polygons.append(ps)
+            places_pa.labels.append(len(re.sub(r'[0-9]+', '', res.name)))
+            places_pa.likelihood.append(1.0)
+            
+            self.recognized_place_vis_pub.publish(places_pa)
+        
+            print()
+            print('[tosm_visualization]The robot is inside of ' + msg.place_name)
+            print()
+        
+        else:
+            print('There are no place ' + msg.place_name)
+        
 
 
 if __name__ == "__main__":

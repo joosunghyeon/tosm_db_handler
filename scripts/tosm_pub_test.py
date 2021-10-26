@@ -8,6 +8,7 @@ import rospkg
 import re
 
 ses_map_pub = rospy.Publisher('SESMap', SESMap, queue_size=5)
+ses_place_pub = rospy.Publisher('/current_place', Place, queue_size=5)
 
 if __name__ == "__main__":
     rospy.init_node("pub_test")
@@ -21,24 +22,31 @@ if __name__ == "__main__":
     test = SESMap()
     obj_test = Object()
     obj_test.header.frame_id = "map"
-    obj_test.object_name = "hingeddoor"
-    obj_test.ID = 314
+    obj_test.object_name = "hingeddoor116"
+    obj_test.ID = 116
 
     test.objects.append(obj_test)
 
     obj_test3 = Object()
     obj_test3.header.frame_id = "map"
-    obj_test3.object_name = "hingeddoor"
-    obj_test3.ID = 311
+    obj_test3.object_name = "hingeddoor116"
+    obj_test3.ID = 116
 
     test.objects.append(obj_test3)
 
-    obj_test2 = Object()
-    obj_test2.header.frame_id = "map"
-    obj_test2.object_name = "elevatordoor"
-    obj_test2.ID = 316
+    # obj_test2 = Object()
+    # obj_test2.header.frame_id = "map"
+    # obj_test2.object_name = "hingeddoor18"
+    # obj_test2.ID = 18
 
-    test.objects.append(obj_test2)
+    # test.objects.append(obj_test2)
 
     ses_map_pub.publish(test)
+    
+    test = Place()
+    test.header.frame_id = 'map'
+    test.place_name = 'corridor15'
+    test.ID = 15
+    
+    ses_place_pub.publish(test)
 

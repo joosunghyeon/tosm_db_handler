@@ -2979,7 +2979,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
-        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.6, 16.4, 0.0, 0, 0, 0, 1]</pose>
+        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.6, 16.4, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
@@ -2999,7 +2999,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
-        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.7, 14.1, 0.0, 0, 0, 0, 1]</pose>
+        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.7, 14.1, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
@@ -3139,7 +3139,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
-        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[46.3, 18, 0.0, 0, 0, 0, 1]</pose>
+        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[46.3, 18, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
