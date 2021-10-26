@@ -192,7 +192,14 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tosm#availableTime">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tosm#implicitModel"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tosm#Door"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tosm#Doorway"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -750,6 +757,14 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     
 
 
+    <!-- http://www.semanticweb.org/tosm#Outdoor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tosm#Outdoor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tosm#OutdoorPlace"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tosm#OutdoorPlace -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tosm#OutdoorPlace">
@@ -927,7 +942,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#automaticdoor021">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#AutomaticDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway021"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -947,7 +962,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#automaticdoor022">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#AutomaticDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway022"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</ID>
+        <availableTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18, 24</availableTime>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -967,7 +983,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#automaticdoor041">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#AutomaticDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway041"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">41</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -987,7 +1003,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#automaticdoor042">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#AutomaticDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway042"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1007,7 +1023,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#automaticdoor111">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#AutomaticDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway111"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">111</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1027,7 +1043,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#automaticdoor114">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#AutomaticDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway114"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">114</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1035,7 +1051,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor1</name>
-        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[19.3, 15.9, 0, 0, 0, 1]</pose>
+        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[19.3, 15.9, 0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.0, 0.5, 2.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
@@ -1047,7 +1063,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#automaticdoor121">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#AutomaticDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway121"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">121</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1055,7 +1071,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor1</name>
-        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[19.2, 12.1, 0, 0, 0, 1]</pose>
+        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[19.2, 12.1, 0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.0, 0.5, 2.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
@@ -1067,7 +1083,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#automaticdoor315">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#AutomaticDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway315"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">315</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1150,7 +1166,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chair1</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[18.9988, 27.7840, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -1168,7 +1184,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chair2</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[17.6561, 28.6276, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -1186,7 +1202,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chair3</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[53.853275, 15.449322, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -1204,7 +1220,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chair4</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[81.3212, 8.7764, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -1222,7 +1238,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chair5</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[37.8302, 17.19824, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -1240,7 +1256,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chair6</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[35.21095, 14.979158, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -1258,7 +1274,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">column1</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[38.5883, 23.2997, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 5.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -1276,7 +1292,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">column2</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[38.2789, 30.1335, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 5.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -1289,7 +1305,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor13"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor14"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [2.53, 22.8], [2.6, 19.8], [24.2, 19.8], [24.2, 22.8] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1304,7 +1320,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#corridor12">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [11.4, 19.8], [11.4, 16.2], [16.9, 16.2], [16.9, 19.8] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1319,7 +1335,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#corridor13">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [24.2, 22.8], [24.2, 19.8], [35.2, 19.8], [35.2, 22.9] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1335,7 +1351,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#doorway114"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [17.5, 19.8], [24.2, 19.8], [24.2, 15.9], [17.2, 16] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1350,7 +1366,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#corridor15">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [46.4, 12.8], [49.6, 12.9], [49.6, 23.8], [46.4, 23.8] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1369,7 +1385,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#doorway17"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room120"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [35.2, 22.9], [35.2, 19.8], [46.2, 20.2], [46.2, 23.8] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1384,7 +1400,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#corridor17">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [17.2, 16], [17.1, 12.2], [24.1, 12.2], [24.2, 15.9] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1400,7 +1416,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor22"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor2"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [80.7, 11.5], [81, 14.5], [95.6, 13.2], [95.4, 10.5] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1415,7 +1431,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#corridor210">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor2"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">210</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [1.78, 14.3], [9.4, 14.8], [9.6, 11.8], [1.8, 11.4] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1431,7 +1447,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor21"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor2"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">211</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [88, 11], [91.3, 10.6], [91, 7], [87.7, 7.2] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1447,7 +1463,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor24"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor2"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [69.5, 15.1], [69.2, 11.9], [80.7, 11.5], [81, 14.5] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1462,7 +1478,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#corridor23">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor2"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [66.8, 15.1], [66.9, 22.3], [69.4, 22.3], [69.5, 15.1] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1479,7 +1495,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor23"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor26"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor2"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [59.2, 15], [69.5, 15.1], [69.2, 11.9], [59.1, 12] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1494,7 +1510,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#corridor25">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor2"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [53.9, 12], [59.1, 12], [59.2, 8.4], [53.7, 8.5] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1511,7 +1527,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor25"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor27"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor2"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [44.8, 15.1], [59.2, 15], [59.1, 12], [44.7, 12.2] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1527,7 +1543,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor28"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor2"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [31.4, 16], [44.7, 15.9], [44.6, 11.5], [31.4, 11.7] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1543,7 +1559,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor29"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor2"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [23.7, 15.3], [31.4, 15.4], [31.4, 11.7], [23.7, 12.4] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1559,7 +1575,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor210"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor2"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [9.4, 14.8], [23.7, 15.3], [23.7, 12.4], [9.6, 11.8] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1576,7 +1592,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor32"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor34"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [59.7, 17], [59.7, 14.2], [88.4, 13.5], [88.3, 16.5] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1591,7 +1607,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#corridor32">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [37.6, 18.1], [37.5, 15], [59.7, 14.2], [59.7, 17] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1607,7 +1623,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#staircase1"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [46.3, 14.6], [46.1, 10.9], [51.7, 10.8], [51.8, 14.3] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1622,7 +1638,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#corridor34">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [59.8, 24.4], [59.7, 17], [62, 17], [62.1, 24.3] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1637,7 +1653,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#corridor35">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [80.9, 13.6], [80.8, 9.71], [84.3, 9.83], [84.4, 13.5] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1653,7 +1669,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor32"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [24.4, 19.3], [24.3, 14.7], [37.3, 14.3], [37.6, 18.7] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1669,7 +1685,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor36"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [23.6, 18.5], [23.7, 15.4], [24.3, 15.4], [24.3, 18.5] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1685,7 +1701,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Corridor"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor37"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [17.2, 18.3], [17.3, 14.5], [23.6, 14.9], [23.6, 18.5] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1705,7 +1721,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#doorway32"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#doorway35"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">39</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [73.8, 16.8], [88.3, 16.5], [88.4, 13.5], [73.6, 13.6] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -1719,9 +1735,10 @@ This property means the place is a leaf place that doesn&apos;t have any child p
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#doorway021">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#building2"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#building2"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road17"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</ID>
         <availableTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8, 18</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1736,9 +1753,10 @@ This property means the place is a leaf place that doesn&apos;t have any child p
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#doorway022">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#building2"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#building2"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road18"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</ID>
         <availableTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1753,9 +1771,10 @@ This property means the place is a leaf place that doesn&apos;t have any child p
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#doorway041">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#building4"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#building4"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road35"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">41</ID>
         <availableTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1770,9 +1789,10 @@ This property means the place is a leaf place that doesn&apos;t have any child p
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#doorway042">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#building4"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#building4"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road12"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42</ID>
         <availableTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1790,7 +1810,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor15"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room110"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1808,7 +1828,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor11"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor12"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">111</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1825,7 +1845,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor12"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#corridor12"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">112</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1842,7 +1862,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#elevator2"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1859,7 +1879,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor17"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">114</ID>
         <availableTime>9, 18</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1877,7 +1897,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor15"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#elevator2"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">115</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1895,7 +1915,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor15"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room116"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">116</ID>
         <availableTime>9, 18</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1913,7 +1933,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor15"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room117"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">117</ID>
         <availableTime>9, 18</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1930,7 +1950,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor11"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">119</ID>
         <availableTime>9, 18</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1948,7 +1968,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor17"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#sidewalk1"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">121</ID>
         <availableTime>9, 18</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1966,7 +1986,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor13"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room13"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -1984,7 +2004,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor13"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room14"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2002,7 +2022,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor13"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room15"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2020,7 +2040,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor13"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room16"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2037,7 +2057,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room17"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2055,7 +2075,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor13"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room18"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2073,7 +2093,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor15"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room19"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2090,7 +2110,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room31"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2108,7 +2128,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor32"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room310"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">310</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2126,7 +2146,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor32"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room311"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">311</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2144,7 +2164,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor34"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room314"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">314</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2162,7 +2182,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor32"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor33"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">315</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2180,7 +2200,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor33"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#elevator1"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#corridor33"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">316</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2198,7 +2218,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor35"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#elevator2"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">317</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2216,7 +2236,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor38"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room319"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">319</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2233,7 +2253,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room32"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2251,7 +2271,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor31"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room33"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2269,7 +2289,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor31"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room34"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2286,7 +2306,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room35"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2304,7 +2324,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor31"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room36"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2322,7 +2342,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor31"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room37"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2340,7 +2360,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor32"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room38"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2358,7 +2378,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor32"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#room39"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">39</ID>
         <availableTime>0, 24</availableTime>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -2381,7 +2401,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drinkingfountain1</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[51.8473, 17.1030, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2399,7 +2419,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drinkingfountain2</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[73.1766, 16.4939, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2441,7 +2461,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#elevatordoor112">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#ElevatorDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway112"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">112</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -2461,7 +2481,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#elevatordoor113">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#ElevatorDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway113"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">113</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -2481,7 +2501,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#elevatordoor115">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#ElevatorDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway115"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">115</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -2501,7 +2521,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#elevatordoor316">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#ElevatorDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway316"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">316</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -2521,7 +2541,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#elevatordoor317">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#ElevatorDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway317"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">317</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -2548,7 +2568,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireextinguisher1</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.4855, 12.9650, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2566,7 +2586,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireextinguisher10</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[88.0728, 13.7421, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2584,7 +2604,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireextinguisher11</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[81.2693, 11.7948, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2602,7 +2622,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireextinguisher2</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[46.3626, 23.8079, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2620,7 +2640,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireextinguisher3</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[42.0040, 32.9709, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2638,7 +2658,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireextinguisher4</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[18.1962, 24.1579, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2656,7 +2676,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireextinguisher5</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[9.7105, 20.0074, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2674,7 +2694,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireextinguisher6</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[42.4802, 14.9695, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2692,7 +2712,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireextinguisher7</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[52.8581, 14.4029, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2710,7 +2730,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireextinguisher8</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[71.2549, 16.6756, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2728,7 +2748,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireextinguisher9</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[74.6800, 13.7677, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2746,7 +2766,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireplug1</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[48.2273, 12.8555, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2764,7 +2784,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireplug2</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[8.9833, 19.8885, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2781,8 +2801,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireplug3</name>
-        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[43.6098, 14.7581. 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[43.6098, 14.7581, 0, 0, 0, 0, 1]</pose>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2800,7 +2820,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireplug4</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[71.7483, 16.5847, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2818,7 +2838,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fireplug5</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[86.5018, 13.5474, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2835,7 +2855,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLeafPlace>
         <level rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</level>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">floor</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">floor1</name>
     </owl:NamedIndividual>
     
 
@@ -2851,7 +2871,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLeafPlace>
         <level rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</level>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">floor</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">floor2</name>
     </owl:NamedIndividual>
     
 
@@ -2867,7 +2887,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLeafPlace>
         <level rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</level>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">floor</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">floor3</name>
     </owl:NamedIndividual>
     
 
@@ -2884,7 +2904,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">floorsign1</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[82.3859, 15.1701, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2902,7 +2922,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">floorsign2</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[81.9314, 11.3404, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2913,13 +2933,14 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#gate1">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Gate"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0,0,0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gate1</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[77.3781, -41.8705, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -2930,7 +2951,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor110">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway110"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -2950,7 +2971,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor116">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway116"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">116</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -2970,7 +2991,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor117">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway117"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">117</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -2990,7 +3011,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor119">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway119"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">119</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3010,7 +3031,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor13">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway13"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3030,7 +3051,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor14">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway14"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3050,7 +3071,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor15">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway15"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3070,7 +3091,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor16">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway16"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3090,7 +3111,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor17">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway17"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3110,7 +3131,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor18">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway18"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3130,7 +3151,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor19">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway19"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3150,7 +3171,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor31">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway31"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3170,7 +3191,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor310">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway310"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">310</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3190,7 +3211,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor311">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway311"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">311</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3210,7 +3231,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor314">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway314"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">314</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3230,7 +3251,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor319">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway319"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">319</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3250,7 +3271,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor32">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway32"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3270,7 +3291,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor33">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway33"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3290,7 +3311,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor34">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway34"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3310,7 +3331,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor35">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway35"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3330,7 +3351,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor36">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway36"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3350,7 +3371,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor37">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway37"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3370,7 +3391,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor38">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway38"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3390,7 +3411,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#hingeddoor39">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#HingedDoor"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway39"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">39</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3416,9 +3437,23 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">informationcentersign1</name>
-        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[22.9642. 25.1960, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[22.9642, 25.1960, 0, 0, 0, 0, 1]</pose>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 2.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tosm#outdoor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#outdoor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Outdoor"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+        <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [0.0, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0] ]</boundary>
+        <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
+        <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
+        <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLeafPlace>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outdoor1</name>
     </owl:NamedIndividual>
     
 
@@ -3430,6 +3465,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road2"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road35"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#sidewalk1"/>
+        <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [15.9, 2.53], [16, 2.53], [16, 2.4], [15.9, 2.4] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3446,6 +3482,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Ramp"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road24"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road3"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[29.2, --5], [29.6, -5], [29.6, -6], [29.2, -6]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3462,6 +3499,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Ramp"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road24"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road9"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[29.2, -22.5], [29.6, -22.5], [29.6, -22.7], [29.2, -22.7]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3478,6 +3516,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road12"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road2"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[-10.9, 1.14], [5.62, 1.14], [5.62, -4.87], [-10.9, -4.87]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3493,6 +3532,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road10">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road11"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[7.33, -22.8], [28.4, -22.8], [28.4, -26.7], [7.33, -26.6]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3510,6 +3550,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road12"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road13"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road14"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[-10.9, -22.8], [7.33, -22.8], [7.33, -31.6], [-10.9, -31.6]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3524,6 +3565,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road12">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[-10.9, -4.87], [5.62, -4.87], [5.62, -22.8], [-10.9, -22.8]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3538,6 +3580,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road13">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[-40.8, -22.8], [-10.9, -22.8], [-10.9, -31.6], [-40.8, -31.6]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3553,6 +3596,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road14">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road15"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[3.63, -31.6], [7.33, -31.6], [7.33, -62.3], [3.63, -62.3]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3568,6 +3612,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road15">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road16"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[3.63, -62.3], [7.33, -62.3], [11, -65.7], [11, -69.8]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3583,6 +3628,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road16">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road18"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[11, -65.7], [56.9, -65.7], [56.9, -69.8], [11, -69.8]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3600,6 +3646,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road18"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road6"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road7"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[56.9, -26.7], [95.6, -26.7], [95.6, -44.8], [56.9, -45]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3615,6 +3662,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road18">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road19"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[56.9, -45], [62.7, -45], [62.8, -69.8], [56.9, -69.8]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3630,6 +3678,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road19">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road20"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[62.9, -65.6], [69.3, -65.7], [69.3, -69.7], [62.8, -69.8]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3645,6 +3694,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road2">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road3"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[5.62, 1.14], [28.4, 1.14], [28.4, -4.87], [5.62, -4.87]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3660,6 +3710,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road20">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road21"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[69.4, -61.6], [87.5, -61.6], [87.5, -69.7], [69.3, -69.7]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3675,6 +3726,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road21">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road22"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[87.5, -61.6], [95.6, -61.6], [87.5, -69.7]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3690,6 +3742,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road22">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road17"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[87.4, -44.9], [95.6, -44.8], [95.6, -61.6], [87.5, -61.6]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3705,7 +3758,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road23">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road24"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[5.62, -4.87], [28.4, -4.87], [28.4, -22.8], [5.62, -22.8]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3721,7 +3775,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road33"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road34"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [28.4, -4.87], [31.4, -4.87], [31.3, -22.8], [28.4, -22.8] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3737,7 +3792,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road26"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road27"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[45.7, -4.87], [82.1, -5.16], [82.1, -22.8], [45.7, -22.8]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3752,7 +3808,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road26">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road27"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[82.1, -5.16], [89.7, -10.5], [82.1, -10.5]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3766,7 +3823,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road27">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[82.1, -10.5], [89.7, -10.5], [89.7, -22.8], [82.1, -22.8]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3781,7 +3839,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road28">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road29"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[7.33, -26.6], [56.9, -26.7], [56.9, -62.3], [7.33, -62.3]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3796,7 +3855,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road29">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road30"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[7.33, -62.3], [11, -62.3], [11, -65.7]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3811,6 +3871,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road3">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road4"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[28.4, 1.14], [45.7, 1.14], [45.7, -4.87], [28.4, -4.87]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3826,7 +3887,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road30">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road28"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[11, -62.3], [56.9, -62.3], [56.9, -65.7], [11, -65.7]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3844,7 +3906,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road32"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road33"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road34"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [31.4, -7.3], [43.1, -7.5], [43, -20.3], [31.3, -20.3] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3861,7 +3924,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road25"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road33"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road34"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [43.1, -4.87], [45.7, -4.87], [45.7, -22.8], [43, -22.8] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3875,7 +3939,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road33">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [31.4, -4.87], [43.1, -4.87], [43.1, -7.5], [31.4, -7.3] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3889,7 +3954,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road34">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [31.3, -20.3], [43, -20.3], [43, -22.8], [31.3, -22.8] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3905,7 +3971,8 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road1"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road2"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [-10.8, 1.14], [16.8, 8.29], [16.8, 1.14], [-10.9, 1.14] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -3920,6 +3987,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road4">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road5"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[45.7, 1.14], [82.1, 1.14], [82.1, -5.16], [45.7, -4.87]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3935,6 +4003,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road5">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road6"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[82.1, 1.14], [95.6, -10.5], [89.7, -10.5], [82.1, -5.16]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3950,6 +4019,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road6">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road7"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[89.7, -10.5], [95.6, -10.5], [95.6, -26.7], [89.7, -26.7]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3965,6 +4035,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road7">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road8"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[56.9, -22.8], [89.7, -22.8], [89.7, -26.7], [56.9, -26.7]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3980,6 +4051,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road8">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road9"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[45.7, -22.8], [56.9, -22.8], [56.9, -26.7], [45.7, -26.7]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -3995,6 +4067,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#road9">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Road"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road10"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[28.4, -22.8], [45.7, -22.8], [45.7, -26.7], [28.4, -26.7]]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -4011,7 +4084,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor11"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [2.6, 19.8], [7.5, 19.7], [8.4, 12.9], [3.3, 12.9] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4027,7 +4100,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room110">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [46.4, 12.8], [49.6, 12.9], [49.6, 16], [46.4, 16] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4043,7 +4116,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room116">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">116</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [49.6, 17.3], [49.6, 14], [51.9, 14], [51.9, 17.3] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4059,7 +4132,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room117">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">117</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [49.6, 14], [49.6, 12.9], [51.9, 12.9], [51.9, 14] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4076,7 +4149,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor11"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">119</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [49.6, 24], [49.6, 20.3], [51.9, 20.4], [52, 24] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4093,7 +4166,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor11"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [7.5, 19.7], [11.4, 19.8], [11.4, 12.7], [8.4, 12.9] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4109,7 +4182,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room120">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [34.8, 33.2], [35.2, 22.9], [42.6, 23.8], [42.4, 33.4] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4125,7 +4198,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room13">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [24.2, 22.8], [27.8, 23], [27.8, 26.7], [24.2, 26.7] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4141,7 +4214,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room14">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [27.8, 23], [31.9, 22.9], [31.9, 26.7] ,[27.8, 26.7] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4157,7 +4230,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room15">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [31.9, 22.9], [35.2, 22.9], [35.1, 26.7], [31.9, 26.7] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4173,7 +4246,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room16">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [24.2, 19.8], [31.6, 19.8], [31.6, 8.7], [24.2, 8.7] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4189,7 +4262,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room17">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [31.6, 19.8], [39.1, 20], [39.1, 8.7], [31.6, 8.7] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4205,7 +4278,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room18">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [39.1, 20], [46.2, 20], [46.2, 8.7], [39.1, 8.7] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4221,7 +4294,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room19">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [71.4, 27.3], [73.8, 27.4], [73.8, 25.7], [71.5, 25.7] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4237,7 +4310,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room31">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [81, 16.5], [87.7, 16.5], [87.7, 31], [81, 31] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4253,7 +4326,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room310">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">310</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [38.3, 18.1], [45.1, 17.7], [45.1, 24.4], [38.3, 24.4] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4269,7 +4342,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room311">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">311</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [51.8, 14.3], [59.7, 14.2], [59.7, 2.26], [51.8, 2.26] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4285,7 +4358,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room312">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">312</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [43, 14.8], [43, 7.82], [46.3, 7.82], [46.3, 14.3] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4301,7 +4374,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room313">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">313</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [38.2, 15], [38.2, 7.82], [43, 7.82], [43, 14.8] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4317,7 +4390,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room314">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">314</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [59.8, 24.4], [66.3, 24.4], [66.3, 31], [59.8, 31] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4334,7 +4407,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#corridor35"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">318</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [80.8, 9.71], [80.8, 2.26], [87.3, 2.13], [87, 9.67] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4350,7 +4423,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room319">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">319</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [2.89, 29.1], [17, 29.4], [3.08, 14.9], [16.8, 15] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4366,7 +4439,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room32">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [73.8, 16.5], [81, 16.5], [81, 31], [73.8, 31] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4382,7 +4455,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room33">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [66.3, 16.5], [73.8, 16.5], [73.8, 31], [66.3, 31] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4398,7 +4471,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room34">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [62.1, 24.3], [62, 17], [66.3, 16.5], [66.3, 24.3] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4414,7 +4487,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room35">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [73.6, 13.6], [80.9, 13.6], [80.8, 2.26], [73.6, 2.26] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4430,7 +4503,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room36">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [66.5, 13.6], [73.6, 13.6], [73.6, 2.26], [66.5, 2.26] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4446,7 +4519,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room37">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [59.7, 14.2], [66.5, 13.6], [66.5, 2.26], [59.7, 2.26] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4462,7 +4535,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room38">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [52.4, 17.4], [59.7, 17], [59.8, 24.4], [52.4, 24.4] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4478,7 +4551,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#room39">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
-        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">39</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [45.1, 17.7], [52.4, 17.4], [52.4, 24.4], [45.1, 24.4] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
@@ -4501,7 +4574,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign1</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[47.1056, 12.3547, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4519,7 +4592,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign10</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[25.9666, 22.9217, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4537,7 +4610,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign11</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[42.3729, 17.9211, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4555,7 +4628,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign12</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[50.0296, 17.5055, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4573,7 +4646,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign13</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[55.6456, 17.2457, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4591,7 +4664,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign14</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[53.3264, 14.3378, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4609,7 +4682,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign15</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[62.6656, 13.8840, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4627,7 +4700,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign16</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[64.4433, 16.9740, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4645,7 +4718,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign17</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[70.5798, 13.7157, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4663,7 +4736,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign18</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[69.2165, 16.8574, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4681,7 +4754,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign19</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[76.7850, 13.5791, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4699,7 +4772,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign2</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.4394, 13.1269, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4717,7 +4790,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign20</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[76.7720, 16.7302, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4735,7 +4808,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign21</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[85.0736, 16.5982, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4753,7 +4826,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign3</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.5498, 15.8866, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4771,7 +4844,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign4</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[46.1850, 20.1076, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4789,7 +4862,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign5</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.5144, 21.5703, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4807,7 +4880,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign6</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[31.2694, 19.8147, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4825,7 +4898,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign7</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[35.1143, 23.3794, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4843,7 +4916,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign8</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[26.4976, 19.8010, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4861,7 +4934,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roomsign9</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[29.6223, 23.0501, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.2]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4872,6 +4945,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#sidewalk1">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Sidewalk"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#sidewalk2"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [17.1, 12.2], [24.1, 12.2], [23.7, 2.7], [17.2, 2.8] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -4887,6 +4961,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#sidewalk2">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Sidewalk"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#sidewalk3"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [24, 8.46], [23.7, 2.7], [53.4, 3.1], [53.4, 8.7] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -4902,6 +4977,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#sidewalk3">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Sidewalk"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#sidewalk4"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [53.4, 8.7], [53.4, 3.1], [61.5, 8.4] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -4917,6 +4993,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#sidewalk4">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Sidewalk"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#doorway113"/>
+		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ID>
         <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [53.8, 24], [53.4, 8.7], [61.5, 8.4], [63, 24.9] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
@@ -4939,7 +5016,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">foomsign1</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[14.2923, 19.5376, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4973,7 +5050,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">standingsignboard1</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[81.3861, 9.9578, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.8, 0.5, 2.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -4991,7 +5068,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">standingsignboard2</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[81.3147, 10.7367, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.8, 0.5, 2.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -5009,7 +5086,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">table1</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[18.8134, 23.0829, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -5027,7 +5104,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">table2</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[20.0650, 27.5425, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -5045,7 +5122,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">table3</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[22.9642, 25.1960, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
@@ -5063,7 +5140,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trashbin1</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[42.9253, 14.9639, 0, 0, 0, 0, 1]</pose>
-        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.0, 0.0, 0.0]</size>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[1.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
     </owl:NamedIndividual>
     
