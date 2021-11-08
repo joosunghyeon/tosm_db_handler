@@ -1,3 +1,4 @@
 Owlready2==0.23
 setuptools==41.0.0
 rdflib==4.2.2 # for SPARQL queries
+pyvis==0.1.9
