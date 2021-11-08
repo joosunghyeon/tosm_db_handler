@@ -6,6 +6,7 @@
     <node pkg="tosm_db_handler" type="tosm_visualization.py" name="tosm_db_handler" output="screen"/>
 
     <!-- map_server -->
-    <arg name="map_file" default="$(find tosm_db_handler)/maps/semantic_outdoor.yaml"/>
+    <arg name="map_file" default="$(find tosm_db_handler)/maps/3rd_floor.yaml"/>
+    <!-- <arg name="map_file" default="$(find tosm_db_handler)/maps/semantic_outdoor.yaml"/> -->
     <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
 </launch>

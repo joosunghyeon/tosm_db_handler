@@ -949,7 +949,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor21</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[75.2, -44.8, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[6.0, 0.7, 1.3]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -970,7 +970,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor22</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[62.7, -57.6, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[6.0, 0.7, 1.3]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -978,11 +978,11 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     
 
 
-    <!-- http://www.semanticweb.org/tosm#automaticdoor041 -->
+    <!-- http://www.semanticweb.org/tosm#automaticdoor41 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#automaticdoor041">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#automaticdoor41">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#AutomaticDoor"/>
-        <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway041"/>
+        <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway41"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">41</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
@@ -990,7 +990,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor41</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[-11.3, 4.34, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[6.0, 0.7, 1.3]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -998,11 +998,11 @@ This property means the place is a leaf place that doesn&apos;t have any child p
     
 
 
-    <!-- http://www.semanticweb.org/tosm#automaticdoor042 -->
+    <!-- http://www.semanticweb.org/tosm#automaticdoor42 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#automaticdoor042">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#automaticdoor42">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#AutomaticDoor"/>
-        <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway042"/>
+        <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#doorway42"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42</ID>
         <canBeOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</canBeOpen>
         <color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0]</color>
@@ -1010,7 +1010,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor42</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[-11.3, -12.8, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[6.0, 0.7, 1.3]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -1030,7 +1030,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor111</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[14, 19.8, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[6.0, 0.7, 1.3]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -1050,7 +1050,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor114</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[19.3, 15.9, 0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.0, 0.5, 2.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -1070,7 +1070,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor121</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[19.2, 12.1, 0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.0, 0.5, 2.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -1090,7 +1090,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automaticdoor315</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49, 14.3, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[5.0, 0.5, 1.3]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -1107,7 +1107,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">building</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">building1</name>
     </owl:NamedIndividual>
     
 
@@ -1121,7 +1121,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">building</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">building2</name>
     </owl:NamedIndividual>
     
 
@@ -1135,7 +1135,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">building</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">building3</name>
     </owl:NamedIndividual>
     
 
@@ -1149,7 +1149,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">building</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">building4</name>
     </owl:NamedIndividual>
     
 
@@ -1310,7 +1310,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor11</name>
     </owl:NamedIndividual>
     
 
@@ -1325,7 +1325,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor12</name>
     </owl:NamedIndividual>
     
 
@@ -1340,7 +1340,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor13</name>
     </owl:NamedIndividual>
     
 
@@ -1356,7 +1356,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor14</name>
     </owl:NamedIndividual>
     
 
@@ -1371,7 +1371,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor15</name>
     </owl:NamedIndividual>
     
 
@@ -1390,7 +1390,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor16</name>
     </owl:NamedIndividual>
     
 
@@ -1405,7 +1405,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor17</name>
     </owl:NamedIndividual>
     
 
@@ -1421,7 +1421,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor2</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor21</name>
     </owl:NamedIndividual>
     
 
@@ -1436,7 +1436,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor2</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor210</name>
     </owl:NamedIndividual>
     
 
@@ -1452,7 +1452,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor2</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor211</name>
     </owl:NamedIndividual>
     
 
@@ -1468,7 +1468,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor2</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor22</name>
     </owl:NamedIndividual>
     
 
@@ -1483,7 +1483,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor2</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor23</name>
     </owl:NamedIndividual>
     
 
@@ -1500,7 +1500,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor2</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor24</name>
     </owl:NamedIndividual>
     
 
@@ -1515,7 +1515,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor2</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor25</name>
     </owl:NamedIndividual>
     
 
@@ -1532,7 +1532,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor2</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor26</name>
     </owl:NamedIndividual>
     
 
@@ -1548,7 +1548,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor2</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor27</name>
     </owl:NamedIndividual>
     
 
@@ -1564,7 +1564,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor2</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor28</name>
     </owl:NamedIndividual>
     
 
@@ -1580,7 +1580,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor2</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor29</name>
     </owl:NamedIndividual>
     
 
@@ -1597,7 +1597,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor31</name>
     </owl:NamedIndividual>
     
 
@@ -1612,7 +1612,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor32</name>
     </owl:NamedIndividual>
     
 
@@ -1628,7 +1628,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor33</name>
     </owl:NamedIndividual>
     
 
@@ -1643,7 +1643,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor34</name>
     </owl:NamedIndividual>
     
 
@@ -1658,7 +1658,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor35</name>
     </owl:NamedIndividual>
     
 
@@ -1674,7 +1674,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor36</name>
     </owl:NamedIndividual>
     
 
@@ -1690,7 +1690,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor37</name>
     </owl:NamedIndividual>
     
 
@@ -1706,7 +1706,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor38</name>
     </owl:NamedIndividual>
     
 
@@ -1726,7 +1726,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corridor39</name>
     </owl:NamedIndividual>
     
 
@@ -1744,7 +1744,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway21</name>
     </owl:NamedIndividual>
     
 
@@ -1762,17 +1762,16 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway22</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tosm#doorway041 -->
+    <!-- http://www.semanticweb.org/tosm#doorway41 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#doorway041">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#doorway41">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
 		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#building4"/>
-        <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#building4"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road35"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">41</ID>
         <availableTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0, 24</availableTime>
@@ -1780,17 +1779,16 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway41</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/tosm#doorway042 -->
+    <!-- http://www.semanticweb.org/tosm#doorway42 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#doorway042">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tosm#doorway42">
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Doorway"/>
 		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#building4"/>
-        <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#building4"/>
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road12"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42</ID>
         <availableTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0, 24</availableTime>
@@ -1798,7 +1796,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway42</name>
     </owl:NamedIndividual>
     
 
@@ -1816,7 +1814,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway110</name>
     </owl:NamedIndividual>
     
 
@@ -1834,7 +1832,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway111</name>
     </owl:NamedIndividual>
     
 
@@ -1851,7 +1849,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway112</name>
     </owl:NamedIndividual>
     
 
@@ -1868,7 +1866,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway113</name>
     </owl:NamedIndividual>
     
 
@@ -1885,7 +1883,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway114</name>
     </owl:NamedIndividual>
     
 
@@ -1903,7 +1901,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway115</name>
     </owl:NamedIndividual>
     
 
@@ -1921,7 +1919,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway116</name>
     </owl:NamedIndividual>
     
 
@@ -1939,7 +1937,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway117</name>
     </owl:NamedIndividual>
     
 
@@ -1956,7 +1954,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway119</name>
     </owl:NamedIndividual>
     
 
@@ -1974,7 +1972,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway121</name>
     </owl:NamedIndividual>
     
 
@@ -1992,7 +1990,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway13</name>
     </owl:NamedIndividual>
     
 
@@ -2010,7 +2008,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway14</name>
     </owl:NamedIndividual>
     
 
@@ -2028,7 +2026,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway15</name>
     </owl:NamedIndividual>
     
 
@@ -2046,7 +2044,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway16</name>
     </owl:NamedIndividual>
     
 
@@ -2063,7 +2061,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway17</name>
     </owl:NamedIndividual>
     
 
@@ -2081,7 +2079,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway18</name>
     </owl:NamedIndividual>
     
 
@@ -2099,7 +2097,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway19</name>
     </owl:NamedIndividual>
     
 
@@ -2116,7 +2114,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway31</name>
     </owl:NamedIndividual>
     
 
@@ -2134,7 +2132,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway310</name>
     </owl:NamedIndividual>
     
 
@@ -2152,7 +2150,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway311</name>
     </owl:NamedIndividual>
     
 
@@ -2170,7 +2168,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway314</name>
     </owl:NamedIndividual>
     
 
@@ -2188,7 +2186,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway315</name>
     </owl:NamedIndividual>
     
 
@@ -2206,7 +2204,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway316</name>
     </owl:NamedIndividual>
     
 
@@ -2224,7 +2222,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway317</name>
     </owl:NamedIndividual>
     
 
@@ -2242,7 +2240,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway319</name>
     </owl:NamedIndividual>
     
 
@@ -2259,7 +2257,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway32</name>
     </owl:NamedIndividual>
     
 
@@ -2277,7 +2275,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway33</name>
     </owl:NamedIndividual>
     
 
@@ -2295,7 +2293,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway34</name>
     </owl:NamedIndividual>
     
 
@@ -2312,7 +2310,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway35</name>
     </owl:NamedIndividual>
     
 
@@ -2330,7 +2328,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway36</name>
     </owl:NamedIndividual>
     
 
@@ -2348,7 +2346,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway37</name>
     </owl:NamedIndividual>
     
 
@@ -2366,7 +2364,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway38</name>
     </owl:NamedIndividual>
     
 
@@ -2384,7 +2382,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">door3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doorway39</name>
     </owl:NamedIndividual>
     
 
@@ -2436,7 +2434,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevator</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevator1</name>
     </owl:NamedIndividual>
     
 
@@ -2451,7 +2449,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevator</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevator2</name>
     </owl:NamedIndividual>
     
 
@@ -2468,7 +2466,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevatordoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevatordoor112</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[14.1, 16.3, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -2488,7 +2486,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevatordoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevatordoor113</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[53.7, 18.5, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.2, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -2508,7 +2506,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevatordoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevatordoor115</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.6, 18, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.2, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -2528,7 +2526,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevatordoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevatordoor316</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[48.8, 10.8, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -2548,7 +2546,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevatordoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevatordoor317</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[84.4, 11, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.0, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -2974,7 +2972,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor110</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[48.3, 13.1, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -2994,7 +2992,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor116</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.6, 16.4, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3014,7 +3012,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor117</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.7, 14.1, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3034,7 +3032,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor119</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.56, 20.4, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.5, 0.5, 0.5]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3054,7 +3052,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor13</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[25.1, 22.9, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3074,7 +3072,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor14</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[28.5, 22.9, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3094,7 +3092,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor15</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[34.4, 23.1, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3114,7 +3112,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor16</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[30.5, 19.8, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3134,7 +3132,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor17</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[37.8, 19.9, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3154,7 +3152,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor18</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[46.3, 18, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3174,7 +3172,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor19</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[49.6, 22, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3194,7 +3192,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor31</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[83.8, 16.7, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3214,7 +3212,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor310</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[42.4, 17.9, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3234,7 +3232,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor311</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[54.5, 14.2, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3254,7 +3252,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor314</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[60.6, 24.4, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3274,7 +3272,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor319</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[16.9, 16.9, 0.0, 0, 0, 0.7071068, 0.7071068]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.5, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3294,7 +3292,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor32</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[76.1, 16.8, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3314,7 +3312,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor33</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[68, 16.7, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3334,7 +3332,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor34</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[65.3, 16.9, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3354,7 +3352,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor35</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[75.7, 13.5, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3374,7 +3372,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor36</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[69.2, 13.7, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3394,7 +3392,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor37</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[61.8, 14.1, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3414,7 +3412,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor38</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[54.8, 17.3, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3434,7 +3432,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
         <isOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isOpen>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hingeddoor39</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[50.1, 17.5, 0.0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.9, 0.2, 2.1]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -3487,7 +3485,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ramp</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ramp1</name>
     </owl:NamedIndividual>
     
 
@@ -3504,7 +3502,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ramp</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ramp2</name>
     </owl:NamedIndividual>
     
 
@@ -3521,7 +3519,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ramp</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ramp3</name>
     </owl:NamedIndividual>
     
 
@@ -3538,7 +3536,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road1</name>
     </owl:NamedIndividual>
     
 
@@ -3554,7 +3552,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road10</name>
     </owl:NamedIndividual>
     
 
@@ -3572,7 +3570,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road11</name>
     </owl:NamedIndividual>
     
 
@@ -3587,7 +3585,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road12</name>
     </owl:NamedIndividual>
     
 
@@ -3602,7 +3600,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road13</name>
     </owl:NamedIndividual>
     
 
@@ -3618,7 +3616,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road14</name>
     </owl:NamedIndividual>
     
 
@@ -3634,7 +3632,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road15</name>
     </owl:NamedIndividual>
     
 
@@ -3650,7 +3648,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road16</name>
     </owl:NamedIndividual>
     
 
@@ -3668,7 +3666,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road17</name>
     </owl:NamedIndividual>
     
 
@@ -3684,7 +3682,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road18</name>
     </owl:NamedIndividual>
     
 
@@ -3700,7 +3698,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road19</name>
     </owl:NamedIndividual>
     
 
@@ -3716,7 +3714,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road2</name>
     </owl:NamedIndividual>
     
 
@@ -3732,7 +3730,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road20</name>
     </owl:NamedIndividual>
     
 
@@ -3748,7 +3746,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road21</name>
     </owl:NamedIndividual>
     
 
@@ -3764,7 +3762,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road22</name>
     </owl:NamedIndividual>
     
 
@@ -3780,7 +3778,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road23</name>
     </owl:NamedIndividual>
     
 
@@ -3797,7 +3795,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road24</name>
     </owl:NamedIndividual>
     
 
@@ -3814,7 +3812,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road25</name>
     </owl:NamedIndividual>
     
 
@@ -3830,7 +3828,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road26</name>
     </owl:NamedIndividual>
     
 
@@ -3845,7 +3843,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road27</name>
     </owl:NamedIndividual>
     
 
@@ -3861,7 +3859,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road28</name>
     </owl:NamedIndividual>
     
 
@@ -3877,7 +3875,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road29</name>
     </owl:NamedIndividual>
     
 
@@ -3893,7 +3891,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road3</name>
     </owl:NamedIndividual>
     
 
@@ -3909,7 +3907,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road30</name>
     </owl:NamedIndividual>
     
 
@@ -3928,7 +3926,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road31</name>
     </owl:NamedIndividual>
     
 
@@ -3946,7 +3944,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road32</name>
     </owl:NamedIndividual>
     
 
@@ -3961,7 +3959,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road33</name>
     </owl:NamedIndividual>
     
 
@@ -3976,7 +3974,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road34</name>
     </owl:NamedIndividual>
     
 
@@ -3989,11 +3987,11 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <isConnectedTo rdf:resource="http://www.semanticweb.org/tosm#road2"/>
 		<isInsideOf rdf:resource="http://www.semanticweb.org/tosm#outdoor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</ID>
-        <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [-10.8, 1.14], [16.8, 8.29], [16.8, 1.14], [-10.9, 1.14] ]</boundary>
+        <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [-10.8, 1.14], [16.8, 1.14], [16.8, 8.29], [-10.9, 7.98] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road35</name>
     </owl:NamedIndividual>
     
 
@@ -4009,7 +4007,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road4</name>
     </owl:NamedIndividual>
     
 
@@ -4025,7 +4023,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road5</name>
     </owl:NamedIndividual>
     
 
@@ -4041,7 +4039,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road6</name>
     </owl:NamedIndividual>
     
 
@@ -4057,7 +4055,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road7</name>
     </owl:NamedIndividual>
     
 
@@ -4073,7 +4071,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road8</name>
     </owl:NamedIndividual>
     
 
@@ -4089,7 +4087,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road9</name>
     </owl:NamedIndividual>
     
 
@@ -4105,7 +4103,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room11</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</roomNumber>
     </owl:NamedIndividual>
     
@@ -4121,7 +4119,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room110</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</roomNumber>
     </owl:NamedIndividual>
     
@@ -4137,7 +4135,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room116</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">116</roomNumber>
     </owl:NamedIndividual>
     
@@ -4153,7 +4151,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room117</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">117</roomNumber>
     </owl:NamedIndividual>
     
@@ -4170,7 +4168,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room119</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">119</roomNumber>
     </owl:NamedIndividual>
     
@@ -4187,7 +4185,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room12</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</roomNumber>
     </owl:NamedIndividual>
     
@@ -4203,7 +4201,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room120</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</roomNumber>
     </owl:NamedIndividual>
     
@@ -4219,7 +4217,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room13</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</roomNumber>
     </owl:NamedIndividual>
     
@@ -4235,7 +4233,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room14</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</roomNumber>
     </owl:NamedIndividual>
     
@@ -4251,7 +4249,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room15</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</roomNumber>
     </owl:NamedIndividual>
     
@@ -4267,7 +4265,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room16</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</roomNumber>
     </owl:NamedIndividual>
     
@@ -4283,7 +4281,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room17</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</roomNumber>
     </owl:NamedIndividual>
     
@@ -4299,7 +4297,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room18</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</roomNumber>
     </owl:NamedIndividual>
     
@@ -4311,11 +4309,11 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor1"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</ID>
-        <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [71.4, 27.3], [73.8, 27.4], [73.8, 25.7], [71.5, 25.7] ]</boundary>
+        <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [2.44, 33.4], [2.7, 22.8], [24.3, 22.9], [24.3, 34] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room19</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</roomNumber>
     </owl:NamedIndividual>
     
@@ -4331,7 +4329,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room31</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</roomNumber>
     </owl:NamedIndividual>
     
@@ -4347,7 +4345,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room310</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">310</roomNumber>
     </owl:NamedIndividual>
     
@@ -4363,7 +4361,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room311</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">311</roomNumber>
     </owl:NamedIndividual>
     
@@ -4379,7 +4377,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room312</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">312</roomNumber>
     </owl:NamedIndividual>
     
@@ -4395,7 +4393,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room314</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">313</roomNumber>
     </owl:NamedIndividual>
     
@@ -4411,7 +4409,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room314</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">314</roomNumber>
     </owl:NamedIndividual>
     
@@ -4428,7 +4426,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room318</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">318</roomNumber>
     </owl:NamedIndividual>
     
@@ -4440,11 +4438,11 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <rdf:type rdf:resource="http://www.semanticweb.org/tosm#Room"/>
         <isInsideOf rdf:resource="http://www.semanticweb.org/tosm#floor3"/>
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">319</ID>
-        <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [2.89, 29.1], [17, 29.4], [3.08, 14.9], [16.8, 15] ]</boundary>
+        <boundary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ [2.89, 29.1], [17, 29.4], [16.9, 14.9], [3.08, 15] ]</boundary>
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room319</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">319</roomNumber>
     </owl:NamedIndividual>
     
@@ -4460,7 +4458,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room32</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</roomNumber>
     </owl:NamedIndividual>
     
@@ -4476,7 +4474,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room33</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</roomNumber>
     </owl:NamedIndividual>
     
@@ -4492,7 +4490,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room34</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34</roomNumber>
     </owl:NamedIndividual>
     
@@ -4508,7 +4506,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room35</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</roomNumber>
     </owl:NamedIndividual>
     
@@ -4524,7 +4522,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room36</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36</roomNumber>
     </owl:NamedIndividual>
     
@@ -4540,7 +4538,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room37</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37</roomNumber>
     </owl:NamedIndividual>
     
@@ -4556,7 +4554,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room38</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38</roomNumber>
     </owl:NamedIndividual>
     
@@ -4572,7 +4570,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room3</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room39</name>
         <roomNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">39</roomNumber>
     </owl:NamedIndividual>
 
@@ -4983,7 +4981,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sidewalk</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sidewalk1</name>
     </owl:NamedIndividual>
     
 
@@ -4999,7 +4997,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sidewalk</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sidewalk2</name>
     </owl:NamedIndividual>
     
 
@@ -5015,7 +5013,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sidewalk</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sidewalk3</name>
     </owl:NamedIndividual>
     
 
@@ -5031,7 +5029,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sidewalk</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sidewalk4</name>
     </owl:NamedIndividual>
     
 
@@ -5046,7 +5044,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isKeyObject rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isKeyObject>
         <isMovable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMovable>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">foomsign1</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">speedgate1</name>
         <pose rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[14.2923, 19.5376, 0, 0, 0, 0, 1]</pose>
         <size rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2.0, 1.0, 1.0]</size>
         <velocity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0, 0, 0, 0, 0, 0]</velocity>
@@ -5065,7 +5063,7 @@ This property means the place is a leaf place that doesn&apos;t have any child p
         <complexity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</complexity>
         <coordinateFrame rdf:datatype="http://www.w3.org/2001/XMLSchema#string">map</coordinateFrame>
         <isLeafPlace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLeafPlace>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">staircase</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">staircase1</name>
     </owl:NamedIndividual>
     
 

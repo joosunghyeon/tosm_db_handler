@@ -3,7 +3,9 @@ from tosm_database_handler import TOSMDatabaseHandler
 from tosm_database_sparql import TOSMDatabaseSPARQL
 from ses_map_msgs.msg import SESMap, Object, Place
 from jsk_recognition_msgs.msg import BoundingBox, BoundingBoxArray, PolygonArray
+from jsk_rviz_plugins.msg import OverlayText 
 from geometry_msgs.msg import PolygonStamped, Point32
+from visualization_msgs.msg import Marker, MarkerArray
 import rospy
 import rospkg
 import re
@@ -16,9 +18,10 @@ class TOSMVisualization:
         rospy.Subscriber("/current_floor", Place, self.place_callback)
         rospy.Subscriber("/current_place", Place, self.leaf_place_callback)
 
-        self.ses_map_object_vis_pub = rospy.Publisher('SESMap_object_vis', BoundingBoxArray, queue_size=5)
-        self.ses_map_place_vis_pub = rospy.Publisher('SESMap_place_vis', PolygonArray, queue_size=5)
-        self.detected_object_vis_pub = rospy.Publisher('detected_object_vis', BoundingBoxArray, queue_size=5)
+        self.ses_map_object_vis_pub   = rospy.Publisher('SESMap_object_vis', BoundingBoxArray, queue_size=5)
+        self.ses_map_place_vis_pub    = rospy.Publisher('SESMap_place_vis', PolygonArray, queue_size=5)
+        self.ses_map_place_name_pub   = rospy.Publisher('SESMap_place_name', MarkerArray, queue_size=5)
+        self.detected_object_vis_pub  = rospy.Publisher('detected_object_vis', BoundingBoxArray, queue_size=5)
         self.recognized_place_vis_pub = rospy.Publisher('recognized_place_vis', PolygonArray, queue_size=5)
 
         print()
@@ -82,9 +85,17 @@ class TOSMVisualization:
         print('[tosm_visualization]Send vis topic for objects is inside of ' + place_name)
         print()
         
-        # Polygon array for places
+        # Polygon array and Marker array for places
         places_pa = PolygonArray()
+        places_ma = MarkerArray()
         places_pa.header.frame_id = 'map'
+        
+        # Delete previous name markers first
+        places_ma_delete = MarkerArray()
+        place_name_delete = Marker()
+        place_name_delete.action = place_name_delete.DELETEALL
+        places_ma_delete.markers.append(place_name_delete)
+        self.ses_map_place_name_pub.publish(places_ma_delete)
         
         print()
         print('[tosm_visualization]Query places that is inside of ' + place_name)
@@ -94,20 +105,50 @@ class TOSMVisualization:
         for item in results_list:
             s = str(item['s'].toPython())
             s = re.sub(r'.*#',"",s)
-            print(s + "  isInsideOf  " + place_name)
+            print(s + "  isInsideOf  " + place_name) 
         
+            # Polygon for place boundary
             ps = PolygonStamped()
             ps.header.frame_id = 'map'
             ps.header.stamp = rospy.Time.now()
             
             res = tosm.query_individual(s)
-            #boundary = res.boundary[0].replace('[', '').replace(']', '').split(',')
             boundary = ast.literal_eval(res.boundary[0])
             ps.polygon.points = [Point32(v[0],v[1],0) for v in boundary]
             places_pa.polygons.append(ps)
             places_pa.labels.append(len(re.sub(r'[0-9]+', '', res.name)))
             places_pa.likelihood.append(1.0)
+
+            # Marker for place name
+            place_m = Marker()
+            place_m.header.frame_id = 'map'
+            place_m.header.stamp = rospy.Time.now()
+            place_m.text = s
+            place_m.type = place_m.TEXT_VIEW_FACING
+            place_m.action = place_m.ADD
+            place_m.scale.z = 1.0
+            place_m.color.a = 1.0
+            place_m.color.r = 0.0
+            place_m.color.g = 0.0
+            place_m.color.b = 0.0
             
+            for point in ps.polygon.points:
+                place_m.pose.position.x += point.x
+                place_m.pose.position.y += point.y
+                place_m.pose.position.z += point.z
+                
+            place_m.pose.position.x /= len(ps.polygon.points)
+            place_m.pose.position.y /= len(ps.polygon.points)
+            place_m.pose.position.z /= len(ps.polygon.points)
+            place_m.pose.orientation.w = 1.0
+            places_ma.markers.append(place_m)
+        
+        # Renumber the marker IDs
+        id = 0
+        for m in places_ma.markers:
+            m.id = id
+            id += 1
+        self.ses_map_place_name_pub.publish(places_ma)
         self.ses_map_place_vis_pub.publish(places_pa)
         
         print()

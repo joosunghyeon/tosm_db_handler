@@ -12,5 +12,6 @@
   <exec_depend>jsk_recognition_msgs</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>jsk_rviz_plugins</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
 
 </package>
